@@ -48,7 +48,6 @@ border-spacing: 0;
   }
   body {
     font-family: "Montserrat";
-    background-color: #F4F3F5;
   }
 /*==========HEADER=========*/
   header {
@@ -147,6 +146,7 @@ border-spacing: 0;
     width: 30%;
     height: calc(100vh - 5rem);
     background-color: white;
+    float: left;
   }
   .contacts a {
     text-decoration: none;
@@ -213,6 +213,86 @@ border-spacing: 0;
   .current {
     border-left: 5px solid #6200EA !important;
   }
+/*==========MESSAGES==========*/
+  .content {
+    width: 70%;
+    float: right;
+    padding: 3rem 3vw;
+    background-color: #F4F3F5;
+  }
+  .content img {
+    width: 3.5rem;
+    border-radius: 50%;
+  }
+  .amy {
+    background-color: white;
+    padding: 1.5rem;
+    max-width: 40%;
+    margin: 0.5rem 4.5rem;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+  }
+  .me {
+    background-color: #B2ACBA;
+    color: white;
+    padding: 1.5rem;
+    max-width: 40%;
+    margin: 0.5rem 4.5rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    float: right;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  .h4-amy {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #B2ACBA;
+    margin-left: 4.5rem;
+    margin-top: 1rem;
+  }
+  .h4-me {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #B2ACBA;
+    text-align: right;
+    margin-right: 4.5rem;
+    margin-top: 1rem;
+  }
+  .img-amy {
+    float: left;
+    margin-top: 0.5rem;
+  }
+  .img-me {
+    float: right;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    margin-bottom: -0.5rem;
+  }
+  .message-1, .message-2, .message-4 {
+    position: relative;
+    float: left;
+  }
+  .message-3, .message-5, .message-6 {
+    position: relative;
+    width: 100%;
+    float: right;
+  }
+  .typing {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #B2ACBA;
+    float: left;
+  }
 /*==========MEDIA QUERY==========*/
   @media screen and (min-width: 1600px) {
     .logo-text {
@@ -226,5 +306,11 @@ border-spacing: 0;
     }
     .contacts {
       width: 20%;
+    }
+    .content {
+      width: 80%;
+    }
+    .amy, .me {
+      max-width: 60%;
     }
   }
