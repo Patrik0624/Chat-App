@@ -53,6 +53,7 @@ border-spacing: 0;
   header {
     width: 100%;
     height: 5rem;
+    position: fixed;
   }
   .search-bar {
     width: 30%;
@@ -147,6 +148,8 @@ border-spacing: 0;
     height: calc(100vh - 5rem);
     background-color: white;
     float: left;
+    position: fixed;
+    top: 5rem;
   }
   .contacts a {
     text-decoration: none;
@@ -219,6 +222,8 @@ border-spacing: 0;
     float: right;
     padding: 3rem 3vw;
     background-color: #F4F3F5;
+    margin-bottom: 8rem;
+    margin-top: 3rem;
   }
   .content img {
     width: 3.5rem;
@@ -293,6 +298,77 @@ border-spacing: 0;
     color: #B2ACBA;
     float: left;
   }
+/*==========TYPE MESSAGE==========*/
+  .type-message {
+    width: 70%;
+    padding: 1rem;
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    border-left: 1px solid #F4F3F5;
+  }
+  textarea {
+    width: calc(100% - 5rem);
+    height: 6rem;
+    border: none;
+    background-color: #F4F3F5;
+    font-family: "Montserrat";
+    padding: 1rem;
+    color: #211138;
+    font-weight: 600;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    resize: none;
+  }
+  textarea:hover {
+    background-color: rgb(220,220,220);
+    transition: 0.1s ease-in-out;
+  }
+  button[name="file"], button[name="emoji"] {
+    border: none;
+    background-color: #F4F3F5;
+    color: #211138;
+    font-size: 1.2rem;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  button[name="file"] {
+    position: absolute;
+    top: 1.6rem;
+    right: 10.5rem;
+  }
+  button[name="emoji"] {
+    position: absolute;
+    top: 1.6rem;
+    right: 7.5rem;
+  }
+  button[name="emoji"]:hover, button[name="file"]:hover {
+    transition: 0.1s ease-in-out;
+    opacity: 0.8;
+  }
+  button[name="send"]:hover {
+    background-color: white;
+    color: #6200EA;
+    transition: 0.1s ease-in-out;
+  }
+  button[name="send"] {
+    border: none;
+    background-color: #6200EA;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+    padding-right: 0.6rem;
+    border: 2px solid #6200EA;
+  }
+  button:focus, textarea:focus {
+    outline: none;
+  }
 /*==========MEDIA QUERY==========*/
   @media screen and (min-width: 1600px) {
     .logo-text {
@@ -312,5 +388,8 @@ border-spacing: 0;
     }
     .amy, .me {
       max-width: 60%;
+    }
+    .type-message {
+      width: 80%;
     }
   }
