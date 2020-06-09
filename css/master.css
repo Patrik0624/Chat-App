@@ -48,6 +48,7 @@ border-spacing: 0;
   }
   body {
     font-family: "Montserrat";
+    background-color: #F4F3F5;
   }
 /*==========HEADER=========*/
   header {
@@ -59,6 +60,8 @@ border-spacing: 0;
     float: left;
     padding: 1rem;
     border-bottom: 1px solid #F4F3F5;
+    background-color: white;
+    position: relative;
   }
   input[type=search] {
     background-color: #F4F3F5;
@@ -67,6 +70,10 @@ border-spacing: 0;
     width: 100%;
     font-weight: 600;
     opacity: 0.6;
+  }
+  input[type=search]:hover {
+    background-color: rgb(220,220,220);
+    transition: 0.1s ease-in-out;
   }
   .header {
     float: right;
@@ -118,6 +125,94 @@ border-spacing: 0;
     margin-top: 1.1rem;
     margin-right: 1rem;
   }
+  .search-bar button {
+    position: absolute;
+    top: 1.9rem;
+    right: 1.5rem;
+    color: #00000029;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .search-bar button:focus {
+    outline: none;
+  }
+  .search-bar button:hover {
+    color: rgb(150,150,150);
+    transition: 0.1s ease-in-out;
+  }
+/*==========CONTACTS==========*/
+  .contacts {
+    width: 30%;
+    height: calc(100vh - 5rem);
+    background-color: white;
+  }
+  .contacts a {
+    text-decoration: none;
+  }
+  .contacts img {
+    width: 3.5rem;
+    border-radius: 50%;
+    margin: 0.75rem 0.7rem;
+  }
+  .contacts h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: inline-block;
+    color: #6200EA;
+  }
+  .contacts p {
+    color: #211138;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.2rem;
+  }
+  .contact-1, .contact-2, .contact-3, .contact-4, .contact-5, .contact-6 {
+    border-bottom: 1px solid #F4F3F5;
+    border-left: 5px solid white;
+  }
+  .contact-1:hover, .contact-2:hover, .contact-3:hover, .contact-4:hover, .contact-5:hover, .contact-6:hover {
+    background-color: rgba(240,240,240);
+    border-left: 5px solid #F4F3F5;
+    transition: 0.1s ease-in-out;
+  }
+  .contact-1-content, .contact-2-content, .contact-3-content, .contact-4-content, .contact-5-content, .contact-6-content {
+    float: right;
+    width: calc(100% - 5.4rem);
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  .contacts button {
+    border: 2px solid #6200EA;
+    color: #6200EA;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 50px;
+    width: calc(100% - 2rem);
+    margin: 1rem 1rem 1rem;
+    cursor: pointer;
+  }
+  button:focused {
+    outline: none;
+  }
+  .contacts button:hover {
+    background-color: #6200EA;
+    color: white;
+    transition: 0.1s ease-in-out;
+  }
+  .current {
+    border-left: 5px solid #6200EA !important;
+  }
 /*==========MEDIA QUERY==========*/
   @media screen and (min-width: 1600px) {
     .logo-text {
@@ -128,5 +223,8 @@ border-spacing: 0;
     }
     .header {
       width: 80%;
+    }
+    .contacts {
+      width: 20%;
     }
   }
